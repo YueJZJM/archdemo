@@ -38,4 +38,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation "org.jetbrains.anko:anko:0.10.8"
     kapt 'com.android.databinding:compiler:3.1.4'
+    //retrofit2 网络库
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    //图片库
+    api 'cn.bingoogolapple:bga-banner:2.2.6@aar'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
 }

@@ -5,7 +5,8 @@ import android.os.Bundle
 import com.yuejianzhong.archdemo.databinding.DemoActivity
 import com.yuejianzhong.archdemo.mvc.MvcActivity
 import com.yuejianzhong.archdemo.mvp.MvpActivity
-import com.yuejianzhong.archdemo.mvvm.MVVMActivity
+import com.yuejianzhong.archdemo.mvvm.databinding.MVVMActivity
+import com.yuejianzhong.archdemo.mvvm.livedata.LiveDataActivity
 import com.yuejianzhong.archdemo.normal.NormalActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -35,6 +36,10 @@ class MainActivity : AppCompatActivity() {
 
         bt_mvvm_activity.onClick {
             startActivity<MVVMActivity>()
+        }
+
+        bt_livedata_activity.onClick {
+            startActivity<LiveDataActivity>()
         }
     }
 }

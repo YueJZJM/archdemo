@@ -6,13 +6,17 @@
     <data>
         <variable
             name="viewModule"
-            type="com.yuejianzhong.archdemo.mvvm.MVVMViewMode" />
+            type="com.yuejianzhong.archdemo.mvvm.databinding.MVVMViewMode" />
+
+        <variable
+            name="activity"
+            type="com.yuejianzhong.archdemo.mvvm.databinding.MVVMActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".mvvm.MVVMActivity">
+        tools:context=".mvvm.databinding.MVVMActivity">
 
         <androidx.appcompat.widget.AppCompatEditText
 
@@ -35,7 +39,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_mvvm_name"
-            android:onClick="@{viewModule.getData}"/>
+            android:onClick="@{viewModule.loginClick}"/>
 
         <TextView
             android:id="@+id/tv_mvvm_user"
@@ -45,6 +49,7 @@
             android:text="@{viewModule.result}"
             android:textSize="20sp"
             android:gravity="center"
+            tools:text="未获取到"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

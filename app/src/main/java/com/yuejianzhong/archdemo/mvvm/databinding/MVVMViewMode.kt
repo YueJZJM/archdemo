@@ -1,7 +1,6 @@
-package com.yuejianzhong.archdemo.mvvm
+package com.yuejianzhong.archdemo.mvvm.databinding
 
 import android.app.Application
-import android.nfc.Tag
 import android.util.Log
 import android.view.View
 import androidx.databinding.BaseObservable
@@ -25,11 +24,12 @@ class MVVMViewMode(val application: Application,val binding: ActivityMvvmBinding
         }
 
 
-    fun getData(view: View) {
+//    @SingleClick
+    fun loginClick(view: View) {
         Log.d("yuejz.getdata","getdata")
         val userInput = binding.editMvvmName.text.toString()
         Log.d("yuejz.userInput",userInput)
-        mvvmModel.getUserInfo(userInput,object :ICallback{
+        mvvmModel.getUserInfo(userInput,object : ICallback {
             override fun onSuccess(msg: String) {
                 result = msg
                 Log.d("yuejz.onSuccess",result)
@@ -41,4 +41,11 @@ class MVVMViewMode(val application: Application,val binding: ActivityMvvmBinding
             }
         })
     }
+
+//    override fun onClick(v: View?) {
+//        v?.let {
+//            loginClick(it)
+//        }
+//    }
+
 }
