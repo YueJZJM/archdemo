@@ -39,7 +39,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edit_mvvm_name"
-            android:onClick="@{viewModule.loginClick}"/>
+            android:onClick="@{(v)->viewModule.loginClick(v)}"/>
 
         <TextView
             android:id="@+id/tv_mvvm_user"

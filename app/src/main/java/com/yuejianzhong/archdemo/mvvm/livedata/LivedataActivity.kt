@@ -2,6 +2,7 @@ package com.yuejianzhong.archdemo.mvvm.livedata
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
@@ -21,6 +22,7 @@ class LiveDataActivity : AppCompatActivity() {
         binding.vm = vm
         initBanner()
 
+
     }
 
     private fun initBanner() {
@@ -30,6 +32,7 @@ class LiveDataActivity : AppCompatActivity() {
             }
             banner.setAdapter(bannerAdapter)
             vm?.banners?.observe(this@LiveDataActivity, Observer {
+                Log.d("yjz.Observer",it.toString())
                 banner.setData(it, null)
             })
         }
