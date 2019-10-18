@@ -41,4 +41,11 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="mvvm"/>
+
+    <Button
+        android:id="@+id/bt_livedata_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="livedata"/>
 </androidx.appcompat.widget.LinearLayoutCompat>
