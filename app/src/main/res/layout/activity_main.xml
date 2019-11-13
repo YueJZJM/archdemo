@@ -48,4 +48,11 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="livedata"/>
+
+    <Button
+        android:id="@+id/bt_coroutines_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="coroutines"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

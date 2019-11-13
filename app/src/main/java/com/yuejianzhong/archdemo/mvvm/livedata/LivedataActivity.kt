@@ -22,6 +22,8 @@ class LiveDataActivity : AppCompatActivity() {
         binding.vm = vm
         initBanner()
 
+//        binding.banner.addOnLayoutChangeListener()
+//        binding.tvLivaDataLoaddata.addTextChangedListener()
 
     }
 

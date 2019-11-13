@@ -2,6 +2,7 @@ package com.yuejianzhong.archdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yuejianzhong.archdemo.coroutines.WxarticleActivity
 import com.yuejianzhong.archdemo.databinding.DemoActivity
 import com.yuejianzhong.archdemo.mvc.MvcActivity
 import com.yuejianzhong.archdemo.mvp.MvpActivity
@@ -40,6 +41,10 @@ class MainActivity : AppCompatActivity() {
 
         bt_livedata_activity.onClick {
             startActivity<LiveDataActivity>()
+        }
+
+        bt_coroutines_activity.onClick {
+            startActivity<WxarticleActivity>()
         }
     }
 }
